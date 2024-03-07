@@ -17,4 +17,21 @@ else:
     print("You chose beef, which will be $6.25")
     subtotal += 6.25
 
-# jnk
+
+bev = input("Do you want a drink? ")
+
+if bev == "yes":
+    bevsel = input("Large: $2.25, Medium: $1.75, Small: $1.00    What size do you want?       ")
+    if bevsel == "Large":
+        print("Okay! A large drink is $2.25")
+        subtotal += 2.25
+    elif bevsel == "Medium":
+        print("Okay! A medium drink is $1.75")
+        subtotal += 1.75
+    else:
+        print("Okay! A small drink is $1")
+        subtotal += 1
+else:
+    print("You don't want a drink? At a restaurant? What are you, some kind of inhuman species?")
+
+print("Current price is: $",subtotal)
